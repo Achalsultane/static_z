@@ -1,0 +1,420 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+
+<head>
+    <link rel="shortcut icon" href="#" type="image/x-icon">
+<link rel="icon" href="django\static_z\myapp\static\images\logo.png" type="image/png">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<meta name="description" content="Webpayx Technologies Ltd. is a Fintech Company setup in 2013 by a team of Professionals having deep insight in Technology and Finance." />
+<meta property="og:title" content="Webpayx : One App - Multiple Services, Superior Margins, More Earnings" />
+
+<!-- <meta property="og:image" content="https://www.masterpay.pro/assets_theme2/favicon.ico" /> -->
+<meta property="og:description" content="Webpayx Technologies Ltd. is a Fintech Company setup in 2013 by a team of Professionals having deep insight in Technology and Finance."/>
+
+<link rel="stylesheet" href="https://www.masterpay.pro/assets_theme2/css/main.css?v=1.0">    <title>Contact Us : SpotpeServices</title>
+<style>
+    /* Contact Section */
+    .contact-section {
+            display: flex;
+            justify-content: center;
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .contact-card, .info-card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 10px;
+            width: 100%;
+        }
+
+        .contact-card {
+            max-width: 700px;
+        }
+
+        .info-card {
+            max-width: 400px;
+        }
+
+        h2 {
+            font-size: 24px;
+            color: #3082b4;
+            margin-bottom: 20px;
+            font-weight: bold;
+            position: relative;
+            text-align: center;
+        }
+
+        h2::before {
+            content: "";
+            position: absolute;
+            width: 50px;
+            height: 3px;
+            background-color: #003df6b5;
+            bottom: -5px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .form-row {
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            width: 100%;
+        }
+
+        .form-control {
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease-in-out;
+        }
+
+        .form-control:focus {
+            border-color:  #003df6b5;
+            box-shadow: 0 0 5px rgba(16, 120, 240, 0.5);
+        }
+
+        .contact-card button {
+            background-color: #003df6b5;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            padding: 10px 20px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .contact-card button:hover {
+            background-color: #003df6b5;
+            transform: scale(1.05);
+        }
+
+        .info-card h3 {
+            font-size: 18px;
+            color: #3082b4;;
+            margin-bottom: 10px;
+        }
+
+        .info-card p {
+            font-size: 16px;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .info-card i {
+            color: #003df6b5;
+            margin-right: 10px;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+</style>
+</head>
+
+<body>
+    
+    <div class="LayoutMain">
+        
+        <!-- Header Start -->
+<input type="checkbox" id="menustate" class="menustate">
+<header class="HeaderMain" >
+    <div class="Wrapper">
+        <div class="Logo">
+            <a href="#">
+                <img src="{{ request.scheme }}://{{ request.get_host }}{% static 'images/logoo.jpg' %}" alt="Logo" style="width: 200px; height: auto;">
+            </a>
+        </div>
+
+        <!-- Navigation Start -->
+        <div class="MinMenu">           
+        
+            <nav class="NavbarMain">
+                <ul>
+                    <li><a href="{% url 'home' %}"  data-hover="Home">Home</a></li>                            
+                    <li><a href="{% url 'services' %}"  data-hover="Services">Services</a></li>
+                    <li><a href="{% url 'about' %}"  data-hover="About us">About us</a></li>
+                    <li><a href="{% url 'contact' %}"  class="active" data-hover="Contact us">Contact us</a></li>
+                </ul>
+            </nav>
+
+           
+
+        <!-- Navigation End -->
+
+    </div>
+</header>        <!-- Header End -->
+<br>
+<BR>
+ <!-- Contact Section -->
+ <section class="contact-section">
+    <div class="contact-card">
+        <h2>Contact Us Form</h2>
+        <form action="{% url 'contact' %}" method="POST" class="needs-validation" novalidate>
+            {% csrf_token %}
+            <div class="form-row">
+                <div class="form-group">
+                    <input type="text" class="form-control" id="fullname" name="fullname" placeholder="Full Name" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <input type="text" class="form-control" id="company" name="company" placeholder="Company Name" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <input type="text" class="form-control" id="phone" name="phone" placeholder="Phone Number" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <textarea class="form-control" id="message" name="message" rows="4" placeholder="Message" required></textarea>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-warning btn-lg">Send</button>
+        </form>
+    </div>
+    <div class="info-card">
+        <h2>Get In Touch</h2>
+        <div class="office">
+            <h3>India Office</h3>
+            <p>11-166 Bollaram (m), <br>Hyderabad Telanagana 502325</p>
+            <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d237.7505934695333!2d78.35251247128544!3d17.554734597265952!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb8db25cf42e85%3A0x81c8d8db79ce23d2!2s4-11%2C%20Industrial%20Development%20Area%20Bollaram%2C%20Mallampet%2C%20Bollaram%2C%20Hyderabad%2C%20Telangana%20502325!5e0!3m2!1sen!2sin!4v1742377343695!5m2!1sen!2sin" width="350" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+        </div>
+        
+        <div class="contact-details">
+            <h3>SpotpeServices Technologies Ltd.</h3>
+            <p><i class="fas fa-phone"></i> +91 99858 88700</p>
+            <p><i class="fas fa-envelope"></i> SpotpeServices@gmail.com</p>
+        </div>
+    </div>
+</section>
+
+
+      
+        
+      
+<footer>
+    <div class="Wrapper">
+        <div class="FooterParent row" uk-scrollspy="cls: uk-animation-fade; target: > div; delay: 300;  repeat: false">
+            <div class="col-lg-3 col-md-6">
+                <div class="footer-logo">
+                    <a href="#">
+                        <img src="{% static 'images/logor.jpg' %}" alt="Footer Logo" class="footer-logo-img">
+                    </a>
+                </div>
+                <ul class="address">
+                    <li>
+                        <h4><a href="#">SpotpeServices Technologies Ltd.</a></h4>
+                        <p>11-166 bollaram (m), <br>hyderabad Telanagana 502325</p>
+                    </li>
+                    <li>
+                        <p><span>Call:</span><a href="tel:+91 99858 88700">+91 99858 88700</a></p>
+                        <p><span>Mail:</span><a href="mailto:SpotpeServices@gmail.com">SpotpeServices@gmail.com</a></p>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-6 menuLinks">
+                <h3>Navigation</h3>
+                <ul>
+                    <li><a href="{% url 'home' %}">Home</a></li>
+                    <li><a href="{% url 'services' %}">Services</a></li>
+                    <li><a href="{% url 'about' %}">About us</a></li>
+                    <li><a href="{% url 'contact' %}">Contact us</a></li>
+                    <li><a href="{% url 'privacy' %}">Privacy-Policy</a></li>
+                    <li><a href="{% url 'terms' %}">Terms & Conditions</a></li>
+                </ul>
+            </div>
+            
+            <div class="col-lg-3 col-md-6 connectWithUs">
+                <h3>Connect with us</h3>
+                <div class="FooterSocials">
+                    <a href="https://www.facebook.com" rel="noreferer, ,noopener" target="_blank" >
+                        <svg viewBox="0 0 8 15">
+                            <path d="M7.699,0.003 L5.780,-0.000 C3.624,-0.000 2.231,1.449 2.231,3.691 L2.231,5.393 L0.302,5.393 C0.135,5.393 0.000,5.530 0.000,5.699 L0.000,8.166 C0.000,8.334 0.135,8.471 0.302,8.471 L2.231,8.471 L2.231,14.694 C2.231,14.863 2.366,15.000 2.533,15.000 L5.050,15.000 C5.216,15.000 5.351,14.863 5.351,14.694 L5.351,8.471 L7.607,8.471 C7.774,8.471 7.909,8.334 7.909,8.166 L7.910,5.699 C7.910,5.618 7.878,5.540 7.822,5.483 C7.765,5.426 7.688,5.393 7.608,5.393 L5.352,5.393 L5.352,3.950 C5.352,3.257 5.515,2.905 6.406,2.905 L7.698,2.905 C7.865,2.905 8.000,2.767 8.000,2.599 L8.000,0.309 C8.000,0.140 7.865,0.003 7.699,0.003 Z"></path>
+                        </svg>
+                    </a>
+                    <a href="https://twitter.com" rel="noreferer, ,noopener" target="_blank" >
+                        <svg viewBox="0 0 16 14">
+                        <path fill-rule="evenodd" fill="rgb(255, 255, 255)" d="M16.000,1.657 C15.405,1.938 14.771,2.124 14.110,2.215 C14.790,1.778 15.309,1.091 15.553,0.262 C14.919,0.670 14.219,0.957 13.473,1.117 C12.871,0.427 12.013,-0.000 11.077,-0.000 C9.261,-0.000 7.799,1.587 7.799,3.533 C7.799,3.813 7.821,4.082 7.875,4.339 C5.148,4.195 2.735,2.788 1.114,0.644 C0.831,1.173 0.665,1.778 0.665,2.429 C0.665,3.653 1.250,4.737 2.122,5.365 C1.595,5.354 1.078,5.189 0.640,4.930 C0.640,4.940 0.640,4.955 0.640,4.969 C0.640,6.685 1.777,8.111 3.268,8.440 C3.001,8.518 2.710,8.556 2.408,8.556 C2.198,8.556 1.986,8.543 1.787,8.495 C2.212,9.894 3.418,10.923 4.852,10.956 C3.736,11.896 2.319,12.463 0.785,12.463 C0.516,12.463 0.258,12.450 -0.000,12.415 C1.453,13.423 3.175,14.000 5.032,14.000 C11.068,14.000 14.368,8.615 14.368,3.948 C14.368,3.792 14.363,3.641 14.356,3.491 C15.007,2.993 15.554,2.372 16.000,1.657 Z"></path>
+                        </svg>
+                    </a>
+                    <a href="https://www.linkedin.com" rel="noreferer, ,noopener" target="_blank" >
+                        <svg viewBox="0 0 12 12">
+                            <path d="M12.000,7.357 L12.000,12.000 L9.428,12.000 L9.428,7.668 C9.428,6.580 9.056,5.837 8.125,5.837 C7.414,5.837 6.991,6.338 6.805,6.822 C6.737,6.995 6.720,7.236 6.720,7.478 L6.720,12.000 L4.147,12.000 C4.147,12.000 4.182,4.663 4.147,3.903 L6.720,3.903 L6.720,5.051 C6.715,5.059 6.708,5.068 6.703,5.077 L6.720,5.077 L6.720,5.051 C7.062,4.500 7.672,3.713 9.038,3.713 C10.731,3.713 12.000,4.870 12.000,7.357 ZM1.456,-0.000 C0.576,-0.000 -0.000,0.604 -0.000,1.399 C-0.000,2.176 0.559,2.798 1.422,2.798 L1.439,2.798 C2.336,2.798 2.894,2.176 2.894,1.399 C2.877,0.604 2.336,-0.000 1.456,-0.000 ZM0.153,12.000 L2.725,12.000 L2.725,3.903 L0.153,3.903 L0.153,12.000 Z"></path>
+                        </svg>
+                    </a>
+                    <a href="https://www.instagram.com" rel="noreferer, ,noopener" target="_blank" >
+                        <svg viewBox="0 0 13 13">
+                            <path d="M9.412,13.000 L3.587,13.000 C1.609,13.000 -0.000,11.391 -0.000,9.412 L-0.000,3.587 C-0.000,1.609 1.609,-0.000 3.587,-0.000 L9.412,-0.000 C11.391,-0.000 13.000,1.609 13.000,3.587 L13.000,9.412 C13.000,11.391 11.391,13.000 9.412,13.000 ZM11.846,9.412 L11.846,3.587 C11.846,2.245 10.754,1.153 9.412,1.153 L3.587,1.153 C2.245,1.153 1.153,2.245 1.153,3.587 L1.153,9.412 C1.153,10.755 2.245,11.847 3.587,11.847 L9.412,11.847 C10.755,11.847 11.847,10.755 11.847,9.412 L11.846,9.412 ZM9.990,3.864 C9.768,3.864 9.550,3.773 9.393,3.616 C9.235,3.459 9.144,3.240 9.144,3.018 C9.144,2.795 9.235,2.577 9.393,2.420 C9.550,2.262 9.768,2.172 9.990,2.172 C10.213,2.172 10.432,2.262 10.588,2.420 C10.746,2.577 10.836,2.795 10.836,3.018 C10.836,3.240 10.746,3.459 10.588,3.616 C10.431,3.773 10.213,3.864 9.990,3.864 ZM6.500,9.850 C4.653,9.850 3.150,8.347 3.150,6.500 C3.150,4.653 4.653,3.150 6.500,3.150 C8.347,3.150 9.850,4.653 9.850,6.500 C9.850,8.347 8.347,9.850 6.500,9.850 ZM6.500,4.304 C5.289,4.304 4.304,5.289 4.304,6.500 C4.304,7.711 5.289,8.696 6.500,8.696 C7.711,8.696 8.696,7.711 8.696,6.500 C8.696,5.289 7.711,4.304 6.500,4.304 Z"></path>
+                        </svg>
+                    </a>
+                </div>
+                <h3>Download Mobile App</h3>
+                <div class="Store-ic">
+                    <a class="mb-2" href="https://play.google.com/store/apps/details?id=com.champion.mpay" rel="noreferer, ,noopener" target="_blank">
+                        <img src="https://www.masterpay.pro/assets_theme2/img/Google-Play.svg" alt="Get it on Google Play">
+                    </a>
+                    <a href="https://apps.apple.com/in/app/masterpay-pro-champion/id6740975351" target="_blank"><img src="https://www.masterpay.pro/assets_theme2/img/App-Store.svg" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="FooterBottom">
+        <div class="Wrapper">
+            <p>Copyright &copy; 2025, SpotpeServices Technologies Ltd. All Rights Reserved.</p>
+        </div>
+    </div>
+    <div id="backToTop" class="show">
+        <svg viewBox="0 0 240.835 240.835">
+            <path d="M129.007,57.819c-4.68-4.68-12.499-4.68-17.191,0L3.555,165.803c-4.74,4.74-4.74,12.427,0,17.155
+            c4.74,4.74,12.439,4.74,17.179,0l99.683-99.406l99.671,99.418c4.752,4.74,12.439,4.74,17.191,0c4.74-4.74,4.74-12.427,0-17.155
+            L129.007,57.819z"></path>   
+        </svg>
+    </div>
+</footer>    </div>
+
+    <!--SignIn Modal -->
+<style type="text/css">
+    .disp-error{font-size: 14px;color: red;font-weight: 500;}
+    /* Absolute Center Spinner */
+    .loading {
+        position: fixed;
+        z-index: 999;
+        height: 2em;
+        width: 2em;
+        overflow: visible;
+        margin: auto;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+    }
+
+    /* Transparent Overlay */
+    .loading:before {
+        content: '';
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.3);
+    }
+
+    /* :not(:required) hides these rules from IE9 and below */
+    .loading:not(:required) {
+        /* hide "loading..." text */
+        font: 0/0 a;
+        color: transparent;
+        text-shadow: none;
+        background-color: transparent;
+        border: 0;
+    }
+
+    .loading:not(:required):after {
+        content: '';
+        display: block;
+        font-size: 10px;
+        width: 1em;
+        height: 1em;
+        margin-top: -0.5em;
+        -webkit-animation: spinner 1500ms infinite linear;
+        -moz-animation: spinner 1500ms infinite linear;
+        -ms-animation: spinner 1500ms infinite linear;
+        -o-animation: spinner 1500ms infinite linear;
+        animation: spinner 1500ms infinite linear;
+        border-radius: 0.5em;
+        -webkit-box-shadow: rgba(0, 0, 0, 0.75) 1.5em 0 0 0, rgba(0, 0, 0, 0.75) 1.1em 1.1em 0 0, rgba(0, 0, 0, 0.75) 0 1.5em 0 0, rgba(0, 0, 0, 0.75) -1.1em 1.1em 0 0, rgba(0, 0, 0, 0.5) -1.5em 0 0 0, rgba(0, 0, 0, 0.5) -1.1em -1.1em 0 0, rgba(0, 0, 0, 0.75) 0 -1.5em 0 0, rgba(0, 0, 0, 0.75) 1.1em -1.1em 0 0;
+        box-shadow: rgba(0, 0, 0, 0.75) 1.5em 0 0 0, rgba(0, 0, 0, 0.75) 1.1em 1.1em 0 0, rgba(0, 0, 0, 0.75) 0 1.5em 0 0, rgba(0, 0, 0, 0.75) -1.1em 1.1em 0 0, rgba(0, 0, 0, 0.75) -1.5em 0 0 0, rgba(0, 0, 0, 0.75) -1.1em -1.1em 0 0, rgba(0, 0, 0, 0.75) 0 -1.5em 0 0, rgba(0, 0, 0, 0.75) 1.1em -1.1em 0 0;
+    }
+
+    /* Animation */
+
+    @-webkit-keyframes spinner {
+        0% {
+            -webkit-transform: rotate(0deg);
+            -moz-transform: rotate(0deg);
+            -ms-transform: rotate(0deg);
+            -o-transform: rotate(0deg);
+            transform: rotate(0deg);
+        }
+        100% {
+            -webkit-transform: rotate(360deg);
+            -moz-transform: rotate(360deg);
+            -ms-transform: rotate(360deg);
+            -o-transform: rotate(360deg);
+            transform: rotate(360deg);
+        }
+    }
+    @-moz-keyframes spinner {
+        0% {
+            -webkit-transform: rotate(0deg);
+            -moz-transform: rotate(0deg);
+            -ms-transform: rotate(0deg);
+            -o-transform: rotate(0deg);
+            transform: rotate(0deg);
+        }
+        100% {
+            -webkit-transform: rotate(360deg);
+            -moz-transform: rotate(360deg);
+            -ms-transform: rotate(360deg);
+            -o-transform: rotate(360deg);
+            transform: rotate(360deg);
+        }
+    }
+    @-o-keyframes spinner {
+        0% {
+            -webkit-transform: rotate(0deg);
+            -moz-transform: rotate(0deg);
+            -ms-transform: rotate(0deg);
+            -o-transform: rotate(0deg);
+            transform: rotate(0deg);
+        }
+        100% {
+            -webkit-transform: rotate(360deg);
+            -moz-transform: rotate(360deg);
+            -ms-transform: rotate(360deg);
+            -o-transform: rotate(360deg);
+            transform: rotate(360deg);
+        }
+    }
+    @keyframes spinner {
+        0% {
+            -webkit-transform: rotate(0deg);
+            -moz-transform: rotate(0deg);
+            -ms-transform: rotate(0deg);
+            -o-transform: rotate(0deg);
+            transform: rotate(0deg);
+        }
+        100% {
+            -webkit-transform: rotate(360deg);
+            -moz-transform: rotate(360deg);
+            -ms-transform: rotate(360deg);
+            -o-transform: rotate(360deg);
+            transform: rotate(360deg);
+        }
+    }
+</style>
+</body>
+</html>

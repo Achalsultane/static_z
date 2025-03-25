@@ -1,0 +1,1107 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+
+<head>
+    <link rel="shortcut icon" href="#" type="image/x-icon">
+<link rel="icon" href="#" type="image/png">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<meta name="description" content="SpotPeServices Technologies Ltd. is a Fintech Company setup in 2013 by a team of Professionals having deep insight in Technology and Finance." />
+<meta property="og:title" content="SpotPeServices: One App - Multiple Services, Superior Margins, More Earnings" />
+
+<meta property="og:description" content="SpotPeServices Technologies Ltd. is a Fintech Company setup in 2013 by a team of Professionals having deep insight in Technology and Finance."/>
+
+<link rel="stylesheet" href="https://www.masterpay.pro/assets_theme2/css/main.css?v=1.0">    <title>services : SpotpeServices</title></head>
+
+<body>
+    <div class="LayoutMain">
+
+        <!-- Header Start -->
+        <input type="checkbox" id="menustate" class="menustate">
+<header class="HeaderMain" >
+    <div class="Wrapper">
+        <div class="Logo">
+            <a href="#">
+                <img src="{{ request.scheme }}://{{ request.get_host }}{% static 'images/logoo.jpg' %}" alt="Logo" style="width: 200px; height: auto;">
+            </a>
+        </div>
+
+        <!-- Navigation Start -->
+        <div class="MinMenu">           
+        
+            <nav class="NavbarMain">
+                <ul>
+                    <li><a href="{% url 'home' %}"  data-hover="Home">Home</a></li>                            
+                    <li><a href="{% url 'services' %}"  class="active" data-hover="Services">Services</a></li>
+                    <li><a href="{% url 'about' %}"  data-hover="About us">About us</a></li>
+                    <li><a href="{% url 'contact' %}"  data-hover="Contact us">Contact us</a></li>
+                </ul>
+            </nav>
+
+           
+
+            
+        </div>
+        <!-- Navigation End -->
+
+    </div>
+</header>        <!-- Header End -->
+
+
+        <!--Slider Banner Main Start -->
+        <section class="BannerMain">
+            <div class="BannerInner" style="background-image: url(https://www.masterpay.pro/assets_theme2/img/services-banner.png);">
+                <div class="Title" uk-scrollspy="cls: uk-animation-slide-bottom; target: h2; repeat: false">
+                    <h2>Digital Transformation</h2>
+                    <p uk-scrollspy="cls: uk-animation-slide-bottom; repeat: false">Live Your Idea With Digital Innovation</p>
+                </div>
+            </div>
+        </section>
+        <!--Slider Banner Main End -->       
+        <section class="ServiceSection  ServicesDetailsPage pb-0">
+            <div class="Wrapper">
+                <div class="TopContent" uk-scrollspy="cls: uk-animation-slide-bottom; target: > div; delay: 300; repeat: false">
+                    <div class="ourservie">
+                        <span class="leftLine">
+                            <i></i>
+                            <i></i>
+                        </span>
+                        <p>OUR SERVICES</p>
+                        <span class="rightLine">
+                            <i></i>
+                            <i></i>
+                        </span>
+                    </div>
+                    <div class="Title">
+                        <h3>One App - Multiple Services, Superior Margins,<br/>More Earnings</h3>
+                    </div>
+                    <div class="content">
+                        <p>At SpotpeServices, we give not just the Best but Legendary satisfaction to our Customers,<br>through Service Excellence.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ServicesDetails" uk-scrollspy="cls: uk-animation-slide-bottom; target: .List; delay: 300; repeat: false">
+
+                <!-- <div id="DMTransfer" class="List" style="background-color: rgba(186, 228, 244, .7);">
+                    <div class="Wrapper">
+                        <div class="ListInner">
+                            <div class="images">
+                                <img src="https://www.masterpay.pro/assets_theme2/img/money-transfer.svg" alt="img">
+                            </div>
+                            <div class="Content">
+                                <div class="Title">
+                                    <h3>Domestic Money Transfer</h3>
+                                    <p>Money Transfers made Simple, Swift and Safe- anytime, anywhere</p>
+                                </div>
+                                <div class="Text">
+                                    <p class="mb-4">Now, transferring money has become safe, easier and simple than never before. The Customers do not need to visit Bank branches for transferring money, they just need to visit their nearest MasterPay Retail store! MasterPay Retailer can meet the remittance need of migrants, unbanked and underbanked population of India with Money Transfer facility anytime of the day.
+                                    </p>
+                                    <p >Through MasterPay’s Money Transfer Service, the Retailers can help their Customers to transfer money to any bank account in India, instantly at anytime, anywhere even after banking hours and on bank holidays.The sender do not need to have a bank account to transfer money to his near and dear ones, he just needs to pay a minimal transaction fee to the Retailer to execute the transaction.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+
+                <div id="AEPSBanking" class="List" >
+                    <div class="Wrapper">
+                        <div class="ListInner">
+                            <div class="images">
+                                <img src="https://www.masterpay.pro/assets_theme2/img/adhar-banking.svg" alt="img">
+                            </div>
+                            <div class="Content">
+                                <div class="Title">
+                                    <h3>Aadhaar Banking (AEPS)</h3>
+                                    <p>Banking Services made easy – anytime, anywhere</p>
+                                </div>
+                                <div class="Text">
+                                    <p class="mb-4">Now, withdrawing cash from your bank account has become safe and easier than never before. The Customers do not need to visit Bank branches or ATMs for basic banking functions like cash withdrawal or balance enquiry. They just need to visit their nearest SpotpeServices Retail store! SpotpeServices Retailer can provide their customers with Aadhaar Banking service through AEPS(Aadhaar Enabled Payment System) powered digital banking service.</p>
+                                    <p >Through SpotpeServices’s Aadhaar Banking Service, the Retailers can help their Customers to conduct banking transactions with their Aadhaar number and  finger authentication.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="MicroATM" class="List" >
+                    <div class="Wrapper">
+                        <div class="ListInner">
+                            <div class="images">
+                                <img src="https://www.masterpay.pro/assets_theme2/img/m-atm.svg" alt="img">
+                            </div>
+                            <div class="Content">
+                                <div class="Title">
+                                    <h3>MICRO ATMs</h3>
+                                    <p>Banking Services made easy – anytime, anywhere</p>
+                                </div>
+                                <div class="Text">
+                                    <p class="mb-4">Now, withdrawing cash from your bank account has become safe and easier than never before. The Customers do not need to visit Bank branches or ATMs for basic banking functions like cash withdrawal or balance enquiry. They just need to visit their nearest SpotpeServices Retail store! SpotpeServices Retailers can provide their customers with Micro ATM Services at his Store with ease and convenience.</p>
+                                    <p>Through SpotpeServices MATM Service, the Retailers can help their Customers to conduct banking transactions.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="CMServices" class="List" >
+                    <div class="Wrapper">
+                        <div class="ListInner">
+                            <div class="images">
+                                <img src="https://www.masterpay.pro/assets_theme2/img/CMS.svg" alt="img">
+                            </div>
+                            <div class="Content">
+                                <div class="Title">
+                                    <h3>Cash Management Services (CMS)</h3>
+                                    <p>Cash Management Services made simple and easy</p>
+                                </div>
+                                <div class="Text">
+                                    <p class="mb-4">Now, payments of EMIs, cash drops of E-commerce companies, Hyperlocal delivery companies, etc. have been made easy, convenient and simpler. SpotpeServices retailer can provide these services to their customers without any hassles.</p>
+                                    <p >Customers do not need to search any bank or the company’s branches, Customers just need to visit their nearest SpotpeServices Retail store! MasterPay Retailer can provide their customers with CMS facility anytime of the day.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="MobileDTHRecharge" class="List" >
+                    <div class="Wrapper">
+                        <div class="ListInner">
+                            <div class="images">
+                                <img src="https://www.masterpay.pro/assets_theme2/img/mobile-recharge.svg" alt="img">
+                            </div>
+                            <div class="Content">
+                                <div class="Title">
+                                    <h3>Mobile / DTH Recharge</h3>
+                                    <p>Recharges made simple and easy</p>
+                                </div>
+                                <div class="Text">
+                                    <p class="mb-4">Mobile and DTH Recharges being a day to day requirement, a SpotpeServices retailer can provide Mobile and DTH recharge services of all the Operators in India to their customers without any hassles.</p>
+                                    <p >Customers can just walk in and get their mobiles/DTH recharged easily in a secure way using the service provided at SpotpeServices Retail store. While SpotpeServices retailers get to provide their customers with more services; they also earn an extra income by rendering these services.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="BillPayment" class="List" >
+                    <div class="Wrapper">
+                        <div class="ListInner">
+                            <div class="images">
+                                <img src="https://www.masterpay.pro/assets_theme2/img/bill-payment.svg" alt="img">
+                            </div>
+                            <div class="Content">
+                                <div class="Title">
+                                    <h3>Bill Payments</h3>
+                                    <p>Bill Payments made simple and easy</p>
+                                </div>
+                                <div class="Text">
+                                    <p class="mb-4">Utility Bill Payments being a day to day requirement, a SpotpeServices retailer can provide Utility Bill Payment services of all the Operators in India to their customers without any hassles.</p>
+                                    <p >Customers can just walk in  and get their electricity, water, gas, mobile, etc. bills paid easily in a secure way using the services provided at SpotpeServices Retail store. While SpotpeServices retailers get to provide their customers with more services; they also earn an extra income by rendering these services.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="VendorPayment" class="List" >
+                    <div class="Wrapper">
+                        <div class="ListInner">
+                            <div class="images">
+                                <img src="https://www.masterpay.pro/assets_theme2/img/vendor-payment.svg" alt="img">
+                            </div>
+                            <div class="Content">
+                                <div class="Title">
+                                    <h3>Vendor Payments</h3>
+                                    <p>Vendor Payments made simple and easy</p>
+                                </div>
+                                <div class="Text">
+                                    <p class="mb-4">Ensure timely payments to your vendors, improving cash flow and strengthening business relationships. Our platform uses advanced security protocols to protect your data and payments. Access real-time payment tracking and generate reports for better financial insights and accountability. Seamlessly integrate with your existing accounting and ERP systems for a smoother workflow.</p>
+                                    <p >Sign up now to experience seamless vendor payments and drive business efficiency. Our support team is here to guide you every step of the way.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="BusBooking" class="List" >
+                    <div class="Wrapper">
+                        <div class="ListInner">
+                            <div class="images">
+                                <img src="https://www.masterpay.pro/assets_theme2/img/bus-booking.svg" alt="img">
+                            </div>
+                            <div class="Content">
+                                <div class="Title">
+                                    <h3>Bus Ticket Booking</h3>
+                                    <p>Bus Bookings made simple and easy</p>
+                                </div>
+                                <div class="Text">
+                                    <p class="mb-4">Travel bookings being a basic requirement, a SpotpeServices retailer can provide Bus Booking services of the comprehensive range of Bus Operators in India to their customers without any hassles.</p>
+                                    <p >Customers can just walk in  and get their travel bookings done easily in a secure way using the services provided at SpotpeServices Retail store. While SpotpeServices retailers get to provide their customers with more services; they also earn an extra income by rendering these services.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="FlightBooking" class="List" >
+                    <div class="Wrapper">
+                        <div class="ListInner">
+                            <div class="images">
+                                <img src="https://www.masterpay.pro/assets_theme2/img/flight-booking.svg" alt="img">
+                            </div>
+                            <div class="Content">
+                                <div class="Title">
+                                    <h3>Flight Ticket Booking</h3>
+                                    <p>Flight Bookings made simple and easy</p>
+                                </div>
+                                <div class="Text">
+                                    <p class="mb-4">SpotpeServices retailer can provide Flight Booking services to their customers at competitive rates and great commissions without any hassles.</p>
+                                    <p >Customers can just walk in  and get their travel bookings done easily in a secure way using the services provided at SpotpeServices Retail store. While SpotpeServices retailers get to provide their customers with more services; they also earn an extra income by rendering these services.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="WhilesaleMarket" class="List" >
+                    <div class="Wrapper">
+                        <div class="ListInner">
+                            <div class="images">
+                                <img src="https://www.masterpay.pro/assets_theme2/img/wholesale-market.svg" alt="img">
+                            </div>
+                            <div class="Content">
+                                <div class="Title">
+                                    <h3>Wholesale Market</h3>
+                                    <p>Selling made simple and easy</p>
+                                </div>
+                                <div class="Text">
+                                    <p class="mb-4">Become a Vendor, start selling on SpotpeServices – your next big sales channel. Multiply your customers, increase your income with SpotpeServices.</p>
+                                
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div id="BulkMoneyTransfer" class="List" >
+                    <div class="Wrapper">
+                        <div class="ListInner">
+                            <div class="images">
+                                <img src="https://www.masterpay.pro/assets_theme2/img/bulk-money-tansfer.svg" alt="img">
+                            </div>
+                            <div class="Content">
+                                <div class="Title">
+                                    <h3>Bulk Payouts</h3>
+                                    <p>Vendor Payments made simple and easy</p>
+                                </div>
+                                <div class="Text">
+                                    <p class="mb-4">Businesses and Retailers of all sizes can avail the Bulk Payout solution to digitize their Vendor Payments.</p>
+                                    <p>One need not make payments in cash for its supplies, anymore. MasterPay Users can on-board its Vendors through Digitized registration of the Payees with end-to-end verification in an efficient and easy manner.
+Reduce your overhead expenses behind your payment processing system and ensure minimal manual intervention. Through the robust mechanism of MasterPay, ensure that your vendors receive payments on time.</p>
+                                
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+                <div id="Insurance" class="List" >
+                    <div class="Wrapper">
+                        <div class="ListInner">
+                            <div class="images">
+                                <img src="https://www.masterpay.pro/assets_theme2/img/insurance.svg" alt="img">
+                            </div>
+                            <div class="Content">
+                                <div class="Title">
+                                    <h3>Insurance</h3>
+                                    <p>Best Plans from Leading Insurers</p>
+                                </div>
+                                <div class="Text">
+                                    <p class="mb-4">With less than 3% of India currently insured, you have the opportunity to make a real difference
+while also enjoying financial rewards. Earn respect and financial success by becoming a part of our
+mission to provide reliable insurance coverage for all.</p>
+                                    <p>Introducing a variety of budget-friendly general insurance plans, tailored to your needs. Among our
+offerings is comprehensive bike and motor insurance, ensuring that you and your vehicle stay
+protected without breaking the bank. Take a step towards safeguarding your valuable assets and
+enjoy peace of mind while you&#39;re on the road. Explore our range today!</p>
+                                
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>       
+        <section class="OurPartnersSection">
+            <div class="Wrapper">
+                <div class="SingleLineHeading" uk-scrollspy="cls: uk-animation-slide-bottom; repeat: false">
+                    <h3>Our Partners</h3>
+                </div>
+                <div class="partnersList"  uk-scrollspy="cls: uk-animation-fade; target: .item; delay: 300; repeat: false">
+                   <div class="item">
+                        <img src="https://www.masterpay.pro/assets_theme2/img/sbi.png" alt="img">
+                    </div>
+                    <div class="item">
+                        <img src="https://www.masterpay.pro/assets_theme2/img/paytem.png" alt="img">
+                    </div>
+                    <div class="item">
+                        <img src="https://www.masterpay.pro/assets_theme2/img/axis.png" alt="img">
+                    </div>
+                    <div class="item">
+                        <img src="https://www.masterpay.pro/assets_theme2/img/fino.png" alt="img">
+                    </div>
+                    <div class="item">
+                        <img src="https://www.masterpay.pro/assets_theme2/img/airtel-payment-bank.png" alt="img">
+                    </div>
+                    <div class="item">
+                        <img src="https://www.masterpay.pro/assets_theme2/img/yesbank.png" alt="img">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+             
+        <footer>
+    <div class="Wrapper">
+        <div class="FooterParent row" uk-scrollspy="cls: uk-animation-fade; target: > div; delay: 300;  repeat: false">
+            <div class="col-lg-3 col-md-6">
+                <div class="footer-logo">
+                    <a href="#">
+                        <img src="{% static 'images/logor.jpg' %}" alt="Footer Logo" class="footer-logo-img">
+                    </a>
+                </div>
+                <ul class="address">
+                    <li>
+                        <h4><a href="#">SpotpeServices Technologies Ltd.</a></h4>
+                        <p>11-166 Bollaram (m), <br>Hyderabad Telanagana 502325</p>
+                    </li>
+                    <li>
+                        <p><span>Call:</span><a href="tel:+91 99858 88700">+91 99858 88700</a></p>
+                        <p><span>Mail:</span><a href="mailto:SpotpeServices@gmail.com">SpotpeServices@gmail.com</a></p>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-6 menuLinks">
+                <h3>Navigation</h3>
+                <ul>
+                    <li><a href="{% url 'home' %}">Home</a></li>
+                    <li><a href="{% url 'services' %}">Services</a></li>
+                    <li><a href="{% url 'about' %}">About us</a></li>
+                    <li><a href="{% url 'contact' %}">Contact us</a></li>
+                    <li><a href="{% url 'privacy' %}">Privacy-Policy</a></li>
+                    <li><a href="{% url 'terms' %}">Terms & Conditions</a></li>
+                </ul>
+            </div>
+            
+            <div class="col-lg-3 col-md-6 connectWithUs">
+                <h3>Connect with us</h3>
+                <div class="FooterSocials">
+                    <a href="https://www.facebook.com" rel="noreferer, ,noopener" target="_blank" >
+                        <svg viewBox="0 0 8 15">
+                            <path d="M7.699,0.003 L5.780,-0.000 C3.624,-0.000 2.231,1.449 2.231,3.691 L2.231,5.393 L0.302,5.393 C0.135,5.393 0.000,5.530 0.000,5.699 L0.000,8.166 C0.000,8.334 0.135,8.471 0.302,8.471 L2.231,8.471 L2.231,14.694 C2.231,14.863 2.366,15.000 2.533,15.000 L5.050,15.000 C5.216,15.000 5.351,14.863 5.351,14.694 L5.351,8.471 L7.607,8.471 C7.774,8.471 7.909,8.334 7.909,8.166 L7.910,5.699 C7.910,5.618 7.878,5.540 7.822,5.483 C7.765,5.426 7.688,5.393 7.608,5.393 L5.352,5.393 L5.352,3.950 C5.352,3.257 5.515,2.905 6.406,2.905 L7.698,2.905 C7.865,2.905 8.000,2.767 8.000,2.599 L8.000,0.309 C8.000,0.140 7.865,0.003 7.699,0.003 Z"></path>
+                        </svg>
+                    </a>
+                    <a href="https://twitter.com" rel="noreferer, ,noopener" target="_blank" >
+                        <svg viewBox="0 0 16 14">
+                        <path fill-rule="evenodd" fill="rgb(255, 255, 255)" d="M16.000,1.657 C15.405,1.938 14.771,2.124 14.110,2.215 C14.790,1.778 15.309,1.091 15.553,0.262 C14.919,0.670 14.219,0.957 13.473,1.117 C12.871,0.427 12.013,-0.000 11.077,-0.000 C9.261,-0.000 7.799,1.587 7.799,3.533 C7.799,3.813 7.821,4.082 7.875,4.339 C5.148,4.195 2.735,2.788 1.114,0.644 C0.831,1.173 0.665,1.778 0.665,2.429 C0.665,3.653 1.250,4.737 2.122,5.365 C1.595,5.354 1.078,5.189 0.640,4.930 C0.640,4.940 0.640,4.955 0.640,4.969 C0.640,6.685 1.777,8.111 3.268,8.440 C3.001,8.518 2.710,8.556 2.408,8.556 C2.198,8.556 1.986,8.543 1.787,8.495 C2.212,9.894 3.418,10.923 4.852,10.956 C3.736,11.896 2.319,12.463 0.785,12.463 C0.516,12.463 0.258,12.450 -0.000,12.415 C1.453,13.423 3.175,14.000 5.032,14.000 C11.068,14.000 14.368,8.615 14.368,3.948 C14.368,3.792 14.363,3.641 14.356,3.491 C15.007,2.993 15.554,2.372 16.000,1.657 Z"></path>
+                        </svg>
+                    </a>
+                    <a href="https://www.linkedin.com" rel="noreferer, ,noopener" target="_blank" >
+                        <svg viewBox="0 0 12 12">
+                            <path d="M12.000,7.357 L12.000,12.000 L9.428,12.000 L9.428,7.668 C9.428,6.580 9.056,5.837 8.125,5.837 C7.414,5.837 6.991,6.338 6.805,6.822 C6.737,6.995 6.720,7.236 6.720,7.478 L6.720,12.000 L4.147,12.000 C4.147,12.000 4.182,4.663 4.147,3.903 L6.720,3.903 L6.720,5.051 C6.715,5.059 6.708,5.068 6.703,5.077 L6.720,5.077 L6.720,5.051 C7.062,4.500 7.672,3.713 9.038,3.713 C10.731,3.713 12.000,4.870 12.000,7.357 ZM1.456,-0.000 C0.576,-0.000 -0.000,0.604 -0.000,1.399 C-0.000,2.176 0.559,2.798 1.422,2.798 L1.439,2.798 C2.336,2.798 2.894,2.176 2.894,1.399 C2.877,0.604 2.336,-0.000 1.456,-0.000 ZM0.153,12.000 L2.725,12.000 L2.725,3.903 L0.153,3.903 L0.153,12.000 Z"></path>
+                        </svg>
+                    </a>
+                    <a href="https://www.instagram.com" rel="noreferer, ,noopener" target="_blank" >
+                        <svg viewBox="0 0 13 13">
+                            <path d="M9.412,13.000 L3.587,13.000 C1.609,13.000 -0.000,11.391 -0.000,9.412 L-0.000,3.587 C-0.000,1.609 1.609,-0.000 3.587,-0.000 L9.412,-0.000 C11.391,-0.000 13.000,1.609 13.000,3.587 L13.000,9.412 C13.000,11.391 11.391,13.000 9.412,13.000 ZM11.846,9.412 L11.846,3.587 C11.846,2.245 10.754,1.153 9.412,1.153 L3.587,1.153 C2.245,1.153 1.153,2.245 1.153,3.587 L1.153,9.412 C1.153,10.755 2.245,11.847 3.587,11.847 L9.412,11.847 C10.755,11.847 11.847,10.755 11.847,9.412 L11.846,9.412 ZM9.990,3.864 C9.768,3.864 9.550,3.773 9.393,3.616 C9.235,3.459 9.144,3.240 9.144,3.018 C9.144,2.795 9.235,2.577 9.393,2.420 C9.550,2.262 9.768,2.172 9.990,2.172 C10.213,2.172 10.432,2.262 10.588,2.420 C10.746,2.577 10.836,2.795 10.836,3.018 C10.836,3.240 10.746,3.459 10.588,3.616 C10.431,3.773 10.213,3.864 9.990,3.864 ZM6.500,9.850 C4.653,9.850 3.150,8.347 3.150,6.500 C3.150,4.653 4.653,3.150 6.500,3.150 C8.347,3.150 9.850,4.653 9.850,6.500 C9.850,8.347 8.347,9.850 6.500,9.850 ZM6.500,4.304 C5.289,4.304 4.304,5.289 4.304,6.500 C4.304,7.711 5.289,8.696 6.500,8.696 C7.711,8.696 8.696,7.711 8.696,6.500 C8.696,5.289 7.711,4.304 6.500,4.304 Z"></path>
+                        </svg>
+                    </a>
+                </div>
+                <h3>Download Mobile App</h3>
+                <div class="Store-ic">
+                    <a class="mb-2" href="https://play.google.com/store/apps" rel="noreferer, ,noopener" target="_blank">
+                        <img src="https://www.masterpay.pro/assets_theme2/img/Google-Play.svg" alt="Get it on Google Play">
+                    </a>
+                    <a href="https://apps.apple.com/in/app" target="_blank"><img src="https://www.masterpay.pro/assets_theme2/img/App-Store.svg" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="FooterBottom">
+        <div class="Wrapper">
+            <p>Copyright &copy; 2025,SpotpeServices Technologies Ltd. All Rights Reserved.</p>
+        </div>
+    </div>
+    <div id="backToTop" class="show">
+        <svg viewBox="0 0 240.835 240.835">
+            <path d="M129.007,57.819c-4.68-4.68-12.499-4.68-17.191,0L3.555,165.803c-4.74,4.74-4.74,12.427,0,17.155
+            c4.74,4.74,12.439,4.74,17.179,0l99.683-99.406l99.671,99.418c4.752,4.74,12.439,4.74,17.191,0c4.74-4.74,4.74-12.427,0-17.155
+            L129.007,57.819z"></path>   
+        </svg>
+    </div>
+</footer>   </div>
+
+   <!--SignIn Modal -->
+<style type="text/css">
+    .disp-error{font-size: 14px;color: red;font-weight: 500;}
+    /* Absolute Center Spinner */
+    .loading {
+        position: fixed;
+        z-index: 999;
+        height: 2em;
+        width: 2em;
+        overflow: visible;
+        margin: auto;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+    }
+
+    /* Transparent Overlay */
+    .loading:before {
+        content: '';
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.3);
+    }
+
+    /* :not(:required) hides these rules from IE9 and below */
+    .loading:not(:required) {
+        /* hide "loading..." text */
+        font: 0/0 a;
+        color: transparent;
+        text-shadow: none;
+        background-color: transparent;
+        border: 0;
+    }
+
+    .loading:not(:required):after {
+        content: '';
+        display: block;
+        font-size: 10px;
+        width: 1em;
+        height: 1em;
+        margin-top: -0.5em;
+        -webkit-animation: spinner 1500ms infinite linear;
+        -moz-animation: spinner 1500ms infinite linear;
+        -ms-animation: spinner 1500ms infinite linear;
+        -o-animation: spinner 1500ms infinite linear;
+        animation: spinner 1500ms infinite linear;
+        border-radius: 0.5em;
+        -webkit-box-shadow: rgba(0, 0, 0, 0.75) 1.5em 0 0 0, rgba(0, 0, 0, 0.75) 1.1em 1.1em 0 0, rgba(0, 0, 0, 0.75) 0 1.5em 0 0, rgba(0, 0, 0, 0.75) -1.1em 1.1em 0 0, rgba(0, 0, 0, 0.5) -1.5em 0 0 0, rgba(0, 0, 0, 0.5) -1.1em -1.1em 0 0, rgba(0, 0, 0, 0.75) 0 -1.5em 0 0, rgba(0, 0, 0, 0.75) 1.1em -1.1em 0 0;
+        box-shadow: rgba(0, 0, 0, 0.75) 1.5em 0 0 0, rgba(0, 0, 0, 0.75) 1.1em 1.1em 0 0, rgba(0, 0, 0, 0.75) 0 1.5em 0 0, rgba(0, 0, 0, 0.75) -1.1em 1.1em 0 0, rgba(0, 0, 0, 0.75) -1.5em 0 0 0, rgba(0, 0, 0, 0.75) -1.1em -1.1em 0 0, rgba(0, 0, 0, 0.75) 0 -1.5em 0 0, rgba(0, 0, 0, 0.75) 1.1em -1.1em 0 0;
+    }
+
+    /* Animation */
+
+    @-webkit-keyframes spinner {
+        0% {
+            -webkit-transform: rotate(0deg);
+            -moz-transform: rotate(0deg);
+            -ms-transform: rotate(0deg);
+            -o-transform: rotate(0deg);
+            transform: rotate(0deg);
+        }
+        100% {
+            -webkit-transform: rotate(360deg);
+            -moz-transform: rotate(360deg);
+            -ms-transform: rotate(360deg);
+            -o-transform: rotate(360deg);
+            transform: rotate(360deg);
+        }
+    }
+    @-moz-keyframes spinner {
+        0% {
+            -webkit-transform: rotate(0deg);
+            -moz-transform: rotate(0deg);
+            -ms-transform: rotate(0deg);
+            -o-transform: rotate(0deg);
+            transform: rotate(0deg);
+        }
+        100% {
+            -webkit-transform: rotate(360deg);
+            -moz-transform: rotate(360deg);
+            -ms-transform: rotate(360deg);
+            -o-transform: rotate(360deg);
+            transform: rotate(360deg);
+        }
+    }
+    @-o-keyframes spinner {
+        0% {
+            -webkit-transform: rotate(0deg);
+            -moz-transform: rotate(0deg);
+            -ms-transform: rotate(0deg);
+            -o-transform: rotate(0deg);
+            transform: rotate(0deg);
+        }
+        100% {
+            -webkit-transform: rotate(360deg);
+            -moz-transform: rotate(360deg);
+            -ms-transform: rotate(360deg);
+            -o-transform: rotate(360deg);
+            transform: rotate(360deg);
+        }
+    }
+    @keyframes spinner {
+        0% {
+            -webkit-transform: rotate(0deg);
+            -moz-transform: rotate(0deg);
+            -ms-transform: rotate(0deg);
+            -o-transform: rotate(0deg);
+            transform: rotate(0deg);
+        }
+        100% {
+            -webkit-transform: rotate(360deg);
+            -moz-transform: rotate(360deg);
+            -ms-transform: rotate(360deg);
+            -o-transform: rotate(360deg);
+            transform: rotate(360deg);
+        }
+    }
+</style>
+<script src="https://www.masterpay.pro/assets_theme2/js/jquery.3.6.0.min.js"></script>
+
+<script src="https://www.masterpay.pro/assets_theme2/js/popper.js"></script>
+<script src="https://www.masterpay.pro/assets_theme2/js/bootstrap.min.js"></script>
+<script src="https://www.masterpay.pro/assets_theme2/js/swiper.min.js"></script>
+<script src="https://www.masterpay.pro/assets_theme2/js/uikit.js"></script>
+<script src="https://www.masterpay.pro/assets_theme2/js/uikit-icons.js"></script>
+<script src="https://www.masterpay.pro/assets_theme2/js/functions.js"></script>
+<script src="https://www.masterpay.pro/assets_theme/js/jquery.validate.min.js"></script>
+<script type="text/javascript">
+  //New Ajax Login check start here
+  jQuery("#btnLogin").click(function(e){
+    e.preventDefault();
+    jQuery(".PageLoaderGo").show();
+    var username = jQuery("#Username").val();
+    var password = jQuery("#Password").val();
+
+    if(username==""){
+      jQuery(".login-username").text("Please Enter Username");
+    }else{
+      jQuery(".login-username").text("");
+    }
+
+    if(password==""){
+      jQuery(".login-password").text("Please Enter Password");
+    }else{
+      jQuery(".login-password").text("");
+    }
+
+    if(username==""||password==""){
+      jQuery(".PageLoaderGo").hide();
+      return false;
+    }else{
+      $.ajax({
+        url: "https://www.masterpay.pro/" + "login/checkPassword",
+        type: 'POST',
+        data: {username:username , password:password},
+        success: function(data) {
+          var obj = jQuery.parseJSON(data);
+          console.log(obj);
+          jQuery(".login-status").html("<span style='color:"+obj.color+"'>"+obj.msg+"</span>");
+            if(obj.send=="yes"){
+              $('form#form2').submit();
+            }else{
+              jQuery(".PageLoaderGo").hide();
+            }
+          }
+        });
+      return false;
+    }
+
+  });
+//New Ajax Login check Ends here
+function autocomplete(inp, arr) {
+		/*the autocomplete function takes two arguments,
+		the text field element and an array of possible autocompleted values:*/
+		var currentFocus;
+		/*execute a function when someone writes in the text field:*/
+		inp.addEventListener("input", function (e) {
+				var a, b, i, val = this.value;
+				/*close any already open lists of autocompleted values*/
+				closeAllLists();
+				if (!val) { return false; }
+				currentFocus = -1;
+				/*create a DIV element that will contain the items (values):*/
+				a = document.createElement("DIV");
+				a.setAttribute("id", this.id + "autocomplete-list");
+				a.setAttribute("class", "autocomplete-items");
+				/*append the DIV element as a child of the autocomplete container:*/
+				this.parentNode.appendChild(a);
+				/*for each item in the array...*/
+				for (i = 0; i < arr.length; i++) {
+						/*check if the item starts with the same letters as the text field value:*/
+						if (arr[i].substr(0, val.length).toUpperCase() == val.toUpperCase()) {
+								/*create a DIV element for each matching element:*/
+								b = document.createElement("DIV");
+								/*make the matching letters bold:*/
+								b.innerHTML = "<strong>" + arr[i].substr(0, val.length) + "</strong>";
+								b.innerHTML += arr[i].substr(val.length);
+								/*insert a input field that will hold the current array item's value:*/
+								b.innerHTML += "<input type='hidden' value='" + arr[i] + "'>";
+								/*execute a function when someone clicks on the item value (DIV element):*/
+								b.addEventListener("click", function (e) {
+										/*insert the value for the autocomplete text field:*/
+										inp.value = this.getElementsByTagName("input")[0].value;
+										/*close the list of autocompleted values,
+										(or any other open lists of autocompleted values:*/
+										closeAllLists();
+								});
+								a.appendChild(b);
+						}
+				}
+		});
+		/*execute a function presses a key on the keyboard:*/
+		inp.addEventListener("keydown", function (e) {
+				var x = document.getElementById(this.id + "autocomplete-list");
+				if (x) x = x.getElementsByTagName("div");
+				if (e.keyCode == 40) {
+						/*If the arrow DOWN key is pressed,
+						increase the currentFocus variable:*/
+						currentFocus++;
+						/*and and make the current item more visible:*/
+						addActive(x);
+				} else if (e.keyCode == 38) { //up
+						/*If the arrow UP key is pressed,
+						decrease the currentFocus variable:*/
+						currentFocus--;
+						/*and and make the current item more visible:*/
+						addActive(x);
+				} else if (e.keyCode == 13) {
+						/*If the ENTER key is pressed, prevent the form from being submitted,*/
+						e.preventDefault();
+						if (currentFocus > -1) {
+								/*and simulate a click on the "active" item:*/
+								if (x) x[currentFocus].click();
+						}
+				}
+		});
+		function addActive(x) {
+				/*a function to classify an item as "active":*/
+				if (!x) return false;
+				/*start by removing the "active" class on all items:*/
+				removeActive(x);
+				if (currentFocus >= x.length) currentFocus = 0;
+				if (currentFocus < 0) currentFocus = (x.length - 1);
+				/*add class "autocomplete-active":*/
+				x[currentFocus].classList.add("autocomplete-active");
+		}
+		function removeActive(x) {
+				/*a function to remove the "active" class from all autocomplete items:*/
+				for (var i = 0; i < x.length; i++) {
+						x[i].classList.remove("autocomplete-active");
+				}
+		}
+		function closeAllLists(elmnt) {
+				/*close all autocomplete lists in the document,
+				except the one passed as an argument:*/
+				var x = document.getElementsByClassName("autocomplete-items");
+				for (var i = 0; i < x.length; i++) {
+						if (elmnt != x[i] && elmnt != inp) {
+								x[i].parentNode.removeChild(x[i]);
+						}
+				}
+		}
+		/*execute a function when someone clicks in the document:*/
+		}
+
+/*An array containing all the country names in the world:*/
+var states = ["Andhra Pradesh", "Arunachal Pradesh", "Assam", "Bihar", "Chhattisgarh", "Goa", "Gujarat", "Haryana", "Himachal Pradesh", "Jammu and Kashmir", "Jharkhand", "Karnataka", "Kerala", "Madhya Pradesh", "Maharashtra", "Manipur", "Meghalaya", "Mizoram", "Nagaland", "Odisha", "Punjab", "Rajasthan", "Sikkim", "Tamil Nadu", "Telangana", "Tripura", "Uttar Pradesh", "Uttarakhand", "West Bengal"];
+
+/*initiate the autocomplete function on the "myInput" element, and pass along the countries array as possible autocomplete values:*/
+
+function getCityName()
+{
+
+		if(document.getElementById('myState').selectedIndex != 0)
+		{
+				document.getElementById('hidStateCode').value = $("#myState")[0].options[document.getElementById('myState').selectedIndex].getAttribute('value');                  
+				$.ajax({
+									type: "GET",
+									url: "https://www.masterpay.pro/city_list/getCity/"+document.getElementById('myState').value,
+									success: function(html){
+										$("#myCity").html(html);
+						}
+				});
+		}
+}
+
+    $(document).ready(function(){
+				
+				$("#contact").validate(
+                    {
+                        rules:
+                        {
+                          name:
+                          {
+                             required:true
+                          },
+                           number:
+                          {
+                            required:true,
+                          },
+                           email:
+                          {
+                             required: true,
+                             email:true
+                          },
+													identity:
+                          {
+                            required:true,
+                          },
+                          message:{
+                            required:true,
+                          }
+                        },
+                        messages:
+                        {
+                          name:
+                          {
+                            required:"Please Enter Name"
+                          },
+                          number:
+                          {
+                            required: "Please Enter Number",
+                          },
+                          email:
+                          {
+                            required: "Please Enter Email",
+                            email:"Invalid email format, Please enter your correct email.",
+                          },
+													number:
+                          {
+                            required: "Please Select Identity",
+                          },
+                          message:
+                          {
+                            required: "Please Enter Message",
+                          },
+                        },
+                        errorPlacement: function(error, element) {
+                        if(element.attr("name") == "role") {
+                          error.insertAfter( element.parent("div"));
+                        } else {
+                          error.insertAfter(element);
+                        }
+                },
+								
+								submitHandler: function(form) {
+                    var Yourname            = $("#Yourname").val();
+										var UserPhone           = $("#UserPhone").val();
+										var UserEmail           = $("#UserEmail").val();
+										var Message             = $("#Message").val();
+										var identity						= $("#identity").val();
+										var btnsignincontact    = $("#btnsignincontact").val();
+				
+										$.ajax({
+											 url: "https://www.masterpay.pro/login",
+											 type: 'POST',
+											 											 data: {fname: Yourname,lname: "",number: UserPhone,email: UserEmail,message: Message, addres: "",pincode: "",state_id: 0,city_id: 0,role: identity,btnsignin: btnsignincontact},
+											 error: function() {
+													alert('Something is wrong');
+											 },
+											 success: function(data) {
+												  console.log(data);
+														if(data == 'success'){
+																$("#messageContact").show();
+																$('#messageContact').html('<i class="fa fa-check" aria-hidden="true" style="color:green;"></i></br><div style="color:green;font-size:25px;">Your contact details save successfully.</div>');
+																$("#Yourname").val('');
+																$("#UserPhone").val('');
+																$("#UserEmail").val('');
+																$("#identity").val('');
+																$("#Message").val('');
+																
+																// $('.PopupRight').html('<i class="fa fa-check" aria-hidden="true" style="color:green;"></i></br><div style="color:green;">Your contact details save successfully.</div>');
+														}else if(data === 'failure'){
+																var message = document.getElementById("messageRegister");
+                                $("#messageContact").show();
+                                $('#messageContact').html('<div style="color:red;"> Something went wrong.</div>');
+														}
+											 }
+										});
+                }
+								
+            });
+				 
+				
+        
+                        
+            $("#form1").validate(
+            {
+                rules:
+                {
+                  firstname:
+                  {
+                     required:true
+                  },
+                  lastname:
+                  {
+                     required:true
+                  },
+                   email:
+                  {
+                     required: true,
+                     email:true
+                  },
+                   number:
+                  {
+                    required:true,
+                    remote: {
+                        url: "https://www.masterpay.pro/login/chkduplicatemobile",
+                        type: "post",
+                        data: { email: function() { return $('#number').val(); } },
+                    }
+                  },
+                  address:
+                  {
+                     required:true,
+                  },
+                  state_id:
+                  {
+                     required:true,
+                  },
+                  city_id:
+                  {
+                     required:true,
+                  },
+                  pincode:
+                  {
+                     required:true
+                  },
+                  role:
+                  {
+                     required:true
+                  },
+                  agree:
+                  {
+                     required:true
+                  },
+                },
+                messages:
+                {
+                  firstname:
+                  {
+                    required:"Please Enter First Name"
+                  },
+                  lastname:
+                  {
+                    required:"Please Enter Last Name"
+                  },
+                  email:
+                  {
+                    required: "Please Enter Email",
+                    email:"Invalid email format, Please enter your correct email.",
+                  },
+                  number:
+                  {
+                    required: "Please Enter Number",
+                    remote : "These number is allready exits."
+                  },
+                  address:
+                  {
+                    required: "Please Enter Addres"
+                  },
+
+                   state_id:
+                  {
+                      required: "Please Select State"
+                  },
+                  city_id:
+                  {
+                      required: "Please Select City"
+                  },
+
+                  pincode:
+                  {
+                    required:"Please Enter Pincode"
+                  },
+                  role:
+                  {
+                    required:"Please Select Role"
+                  },
+                  agree:
+                  {
+                    required:"Please Agree Terms & Conditions"
+                  }
+                },
+                errorPlacement: function(error, element) {
+                if(element.attr("name") == "role") {
+                  error.insertAfter( element.parent("div"));
+                } else {
+                  error.insertAfter(element);
+                }
+        },
+
+                submitHandler: function(form) {
+                    var Firstname       = $("#Firstname").val();
+                    var Lastname        = $("#Lastname").val();
+                    var MobileNumber    = $("#MobileNumber").val();
+                    var REmail          = $("#REmail").val();
+                    var Address         = $("#Address").val();
+                    var Pincode         = $("#Pincode").val();
+                    var myState         = $("#myState").val();
+                    var myCity          = $("#myCity").val();
+                    var role            = $('input[name="role"]:checked').val();
+                    var btnsignin       = $("#btnsignin").val();
+                    $.ajax({
+                       url: "https://www.masterpay.pro/login",
+                       type: 'POST',
+                       data: {fname: Firstname,lname: Lastname,number: MobileNumber,email: REmail, addres: Address,pincode: Pincode,state_id: myState,city_id: myCity,role: role,btnsignin: btnsignin},
+                       error: function() {
+                          alert('Something is wrong');
+                       },
+                       success: function(data) {
+                        console.log(data);
+                            if(data == 'success'){
+																clearformdata();
+                                var message = document.getElementById("messageRegister");
+                                $("#messageRegister").show();
+                                $('#messageRegister').html('<i class="fa fa-check" aria-hidden="true" style="color:green;"></i></br><div style="color:green;font-size:25px;text-align:center">Your contact details save successfully.</div>');
+                                                            }
+                            else if(data == 'askotp')
+                            {
+                                
+                                document.getElementById("hidnumber").value = MobileNumber;
+                                $("#SignupMain").hide();
+                                var message = document.getElementById("messageRegister");
+                                message.style.display = "block";
+                                $('#messageRegister').html('<i class="fa fa-check" aria-hidden="true" style="color:green;"></i></br><div style="color:green;font-size:25px;text-align:center">Please Enter One Time Password.</div>');
+                                $('#SignupOtpMain').show();
+                     
+                            }
+                            else if(data === 'failure')
+                            {
+                                var message = document.getElementById("messageRegister");
+                                $("#messageRegister").show();
+                                $('#messageRegister').html('<div style="color:red;"> Something went wrong.</div>');
+                                                            }
+                       }
+                    });
+                }
+        });
+
+
+           
+            $("#form2").validate(
+            {
+                rules:
+                {
+                  txtUsername:
+                  {
+                     required:true
+                  },
+                  txtPassword:
+                  {
+                     required:true
+                  },
+                },
+                messages:
+                {
+                  txtUsername:
+                  {
+                    required:"Please Enter Username"
+                  },
+                  txtPassword:
+                  {
+                    required:"Please Enter Password"
+                  },
+                },
+                errorPlacement: function(error, element) {
+                if(element.attr("name") == "role") {
+                  error.insertAfter( element.parent("div"));
+                } else {
+                  error.insertAfter(element);
+                }
+            },
+        });
+
+
+
+
+
+        //Forgot Password
+       
+        $("#forgotpasswordform").validate(
+            {
+                rules:
+                {
+                  txtMobile:
+                  {
+                     required:true
+                  },
+                },
+                messages:
+                {
+                  txtMobile:
+                  {
+                    required:"Please Enter Mobile No."
+                  },
+                },
+                errorPlacement: function(error, element) {
+                    if(element.attr("name") == "role") {
+                      error.insertAfter( element.parent("div"));
+                    } else {
+                      error.insertAfter(element);
+                    }
+                },
+                submitHandler: function(form) {
+                    var mobile_no = $("#mobile_no").val();
+
+                    $.ajax({
+                       url: "https://www.masterpay.pro/forgot/doforgot",
+                       type: 'POST',
+                       data: {txtMobile: mobile_no},
+                       error: function() {
+                          alert('Something is wrong');
+                       },
+                       success: function(data) {
+                            if(data == 'success'){
+                                var message = document.getElementById("messageForgot");
+                                message.style.display = "block";
+                                $('#messageForgot').html('<p style="color:green;">Your Login password has been sent to your mobile please check mobile.</p>');
+                                setTimeout(function(){
+                                  message.style.display = "none"
+                                }, 5000);
+                            }else if(data === 'failure'){
+                                var message = document.getElementById("messageForgot");
+                                message.style.display = "block";
+                                $('#messageForgot').html('<p style="color:red;">'+mobile_no+' is invalid mobile number. Please enter valid mobile.</p>');
+                                setTimeout(function(){
+                                  message.style.display = "none"
+                                }, 5000);
+                            }
+                        }
+                    });
+            }
+        });
+
+            });
+    function clearformdata()
+    {
+                document.getElementById("hidnumber").value = "";
+        document.getElementById("Firstname").value = "";
+        document.getElementById("Lastname").value = "";
+        document.getElementById("MobileNumber").value = "";
+        document.getElementById("REmail").value = "";
+        document.getElementById("Address").value = "";
+        document.getElementById("Pincode").value = "";
+        document.getElementById("myState").value = "";
+        document.getElementById("myCity").value = "";
+        document.getElementById("agree").checked = false;
+    }
+    function isNumberKey(evt)
+     {
+        var charCode = (evt.which) ? evt.which : event.keyCode
+        if (charCode > 31 && (charCode < 48 || charCode > 57))
+           return false;
+
+        return true;
+     }
+    </script></body>
+</html>
